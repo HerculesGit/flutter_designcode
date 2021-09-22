@@ -51,6 +51,7 @@ flutter:
     - asset/icons/
     - asset/images/
     - asset/logos/
+    - asset/illustrations/
 
   fonts:
     - family: SF Pro Text
