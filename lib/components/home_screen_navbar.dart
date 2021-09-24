@@ -5,7 +5,9 @@ import 'searchfield_widget.dart';
 import 'sidebar_button.dart';
 
 class HomeScreenNavBar extends StatelessWidget {
-  const HomeScreenNavBar();
+  final Function triggerAnimation;
+
+  HomeScreenNavBar({required this.triggerAnimation});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +16,9 @@ class HomeScreenNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          SidebarButton(),
+          SidebarButton(
+            triggerAnimation: triggerAnimation,
+          ),
           SearchFieldWidget(),
           Icon(
             Icons.notifications,
